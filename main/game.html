@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card - Miłosz Marcinik</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navigation -->
+
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list" style="--clr:#f44336;">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="list" style="--clr:#f44336;">
+                <a href="cv.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+
+            <li class="list" style="--clr:#f44336;">
+                <a href="location.html">
+                    <span class="icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </span>
+                    <span class="text">Map</span>
+                </a>
+            </li>
+
+            <li class="list " style="--clr:#f44336;">
+                <a href="form.html">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>GRA "PAPIER, KAMIEŃ, NOŻYCZKI"</h1>
+
+        <div class="select">
+
+            <h3>Proszę, wybierz:</h3>
+
+            <img data-option="papier" class="first" src="images/papier.jpg" alt="" title="Papier">
+
+            <img data-option="kamień" src="images/kamien.jpg" alt="" title="Kamień">
+
+            <img data-option="nożyczki" src="images/nozyczki.jpg" alt="" title="nożyczki">
+
+        </div>
+
+        <button class="start">Let's play!</button>
+
+        <div class="panel-left">
+            <h3>Wyniki gry</h3>
+            <p>Twój wybór: <span data-summary="your-choice"></span></p>
+            <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+            <h2>Zwycięzca gry: <span data-summary="who-win"></span></h2>
+        </div>
+
+        <div class="panel-right">
+            <h3>Aktualne wyniki</h3>
+            <p class="numbers">liczba gier: <span>0</span></p>
+            <p class="wins">wygranych: <span>0</span></p>
+            <p class="losses">przegranych: <span>0</span></p>
+            <p class="draws">remisów: <span>0</span></p>
+        </div>
+
+        <!-- play game button -->
+        <div class="game-and-calendar-container">
+
+            <a href="game.html">
+                <div class="play-game">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- script for ionIcons -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- main script -->
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+
+</body>
+
+</html>
